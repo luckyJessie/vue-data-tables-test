@@ -3,9 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Resource from 'vue-resource'
+import ElementUI from 'element-ui'
+import DataTables from 'vue-data-tables'
+import 'element-ui/lib/theme-chalk/index.css'
 
+Vue.use(DataTables)
 Vue.config.productionTip = false
-
+Vue.use(Resource)
+Vue.use(ElementUI)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
